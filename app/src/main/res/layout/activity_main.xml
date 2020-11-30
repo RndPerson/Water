@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43CA91"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_glass1" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="68dp"
+        android:background="#00FFFFFF"
+        android:onClick="minusClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/minus" />
+
+    <ImageButton
+        android:id="@+id/plusBtn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="68dp"
+        android:adjustViewBounds="false"
+        android:background="#00FFFFFF"
+        android:cropToPadding="false"
+        android:onClick="plusClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Выпито стаканов воды"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
